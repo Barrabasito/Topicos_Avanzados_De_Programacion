@@ -32,6 +32,7 @@ public class Sexo extends JFrame {
 
 	
 	public Sexo() {
+		setTitle("Sexo");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -70,6 +71,7 @@ public class Sexo extends JFrame {
 		btnAceptar.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
+				
 				if(radMasculino.isSelected()) {
 					System.out.println("Selecciono Masculino");
 					JOptionPane.showMessageDialog(contentPane, radMasculino.getText());
@@ -85,5 +87,4 @@ public class Sexo extends JFrame {
 		btnAceptar.setBounds(127, 183, 89, 23);
 		contentPane.add(btnAceptar);
 	}
-
 }

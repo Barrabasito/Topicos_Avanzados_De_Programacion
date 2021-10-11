@@ -11,6 +11,7 @@ import javax.swing.JTextField;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextArea;
+import java.awt.Color;
 
 public class VentanaSerie extends JFrame {
 
@@ -31,6 +32,7 @@ public class VentanaSerie extends JFrame {
 	}
 
 	public VentanaSerie() {
+		setTitle("Serie");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -121,5 +123,17 @@ public class VentanaSerie extends JFrame {
 		});
 		btnLimpiar.setBounds(178, 177, 79, 23);
 		contentPane.add(btnLimpiar);
+		
+		JLabel lblJuanHernandezRosas = new JLabel("JUAN HERNANDEZ ROSAS");
+		lblJuanHernandezRosas.setForeground(Color.BLUE);
+		lblJuanHernandezRosas.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		lblJuanHernandezRosas.setBounds(10, 233, 144, 17);
+		contentPane.add(lblJuanHernandezRosas);
+		
+		JLabel lblNo = new JLabel("NO. 19100199");
+		lblNo.setForeground(Color.BLUE);
+		lblNo.setFont(new Font("Berlin Sans FB Demi", Font.PLAIN, 12));
+		lblNo.setBounds(178, 233, 79, 17);
+		contentPane.add(lblNo);
 	}
 }
